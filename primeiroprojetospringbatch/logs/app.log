@@ -1556,3 +1556,69 @@ org.springframework.dao.InvalidDataAccessApiUsageException: No value supplied fo
 2021-12-02 23:21:21,793 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [jdbcPagingReaderStep]
 2021-12-02 23:21:21,820 INFO o.s.b.c.s.AbstractStep [main] Step: [jdbcPagingReaderStep] executed in 26ms
 2021-12-02 23:21:21,825 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcPagingReaderJob]] completed with the following parameters: [{run.id=11, arquivoClientes=file:files/clientes.txt, arquivoClientesDelimitado=file:files/clientes_delimitado.txt}] and the following status: [COMPLETED] in 46ms
+2021-12-20 21:23:13,818 INFO c.d.p.PrimeiroprojetospringbatchApplication [main] Starting PrimeiroprojetospringbatchApplication using Java 13.0.2 on DESKTOP-I038IBG with PID 7272 (C:\Users\Diego\Desktop\cursos\spring-batch\primeiroprojetospringbatch\target\classes started by Diego in C:\Users\Diego\Desktop\cursos\spring-batch\primeiroprojetospringbatch)
+2021-12-20 21:23:13,824 INFO c.d.p.PrimeiroprojetospringbatchApplication [main] No active profile set, falling back to default profiles: default
+2021-12-20 21:23:15,801 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2021-12-20 21:23:16,646 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-12-20 21:23:16,769 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Starting...
+2021-12-20 21:23:16,970 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Start completed.
+2021-12-20 21:23:17,181 INFO o.s.b.c.r.s.JobRepositoryFactoryBean [main] No database type set, using meta data indicating: POSTGRES
+2021-12-20 21:23:17,372 INFO o.s.b.c.l.s.SimpleJobLauncher [main] No TaskExecutor has been set, defaulting to synchronous executor.
+2021-12-20 21:23:17,623 INFO c.d.p.PrimeiroprojetospringbatchApplication [main] Started PrimeiroprojetospringbatchApplication in 4.462 seconds (JVM running for 7.624)
+2021-12-20 21:23:17,989 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=arquivoDelimitadoJob]] launched with the following parameters: [{run.id=14, arquivoClientes=file:files/clientes.txt, arquivoClientesDelimitado=file:files/clientes_delimitado.txt}]
+2021-12-20 21:23:18,068 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [leituraArquivoDelimitadoStep]
+2021-12-20 21:23:18,176 INFO o.s.b.c.s.AbstractStep [main] Step: [leituraArquivoDelimitadoStep] executed in 108ms
+2021-12-20 21:23:18,188 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=arquivoDelimitadoJob]] completed with the following parameters: [{run.id=14, arquivoClientes=file:files/clientes.txt, arquivoClientesDelimitado=file:files/clientes_delimitado.txt}] and the following status: [COMPLETED] in 162ms
+2021-12-20 21:23:18,207 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=arquivoLarguraFixaJob]] launched with the following parameters: [{run.id=14, arquivoClientes=file:files/clientes.txt, arquivoClientesDelimitado=file:files/clientes_delimitado.txt}]
+2021-12-20 21:23:18,225 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [leituraArquivoLarguraFixaStep]
+2021-12-20 21:23:18,259 INFO o.s.b.c.s.AbstractStep [main] Step: [leituraArquivoLarguraFixaStep] executed in 34ms
+2021-12-20 21:23:18,271 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=arquivoLarguraFixaJob]] completed with the following parameters: [{run.id=14, arquivoClientes=file:files/clientes.txt, arquivoClientesDelimitado=file:files/clientes_delimitado.txt}] and the following status: [COMPLETED] in 56ms
+2021-12-20 21:23:18,289 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=imprimeOlajob]] launched with the following parameters: [{nome=Diego123, run.id=31, arquivoClientes=file:files/clientes.txt, arquivoClientesDelimitado=file:files/clientes_delimitado.txt}]
+2021-12-20 21:23:18,300 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [imprimeOlaStep]
+2021-12-20 21:23:18,306 INFO o.s.b.c.s.AbstractStep [main] Step: [imprimeOlaStep] executed in 6ms
+2021-12-20 21:23:18,312 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=imprimeOlajob]] completed with the following parameters: [{nome=Diego123, run.id=31, arquivoClientes=file:files/clientes.txt, arquivoClientesDelimitado=file:files/clientes_delimitado.txt}] and the following status: [COMPLETED] in 21ms
+2021-12-20 21:23:18,327 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=imprimeParImparJob]] launched with the following parameters: [{nome=Diego123, run.id=22, arquivoClientes=file:files/clientes.txt, arquivoClientesDelimitado=file:files/clientes_delimitado.txt}]
+2021-12-20 21:23:18,337 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [imprimeParImparStep]
+2021-12-20 21:23:18,386 INFO o.s.b.c.s.AbstractStep [main] Step: [imprimeParImparStep] executed in 48ms
+2021-12-20 21:23:18,392 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=imprimeParImparJob]] completed with the following parameters: [{nome=Diego123, run.id=22, arquivoClientes=file:files/clientes.txt, arquivoClientesDelimitado=file:files/clientes_delimitado.txt}] and the following status: [COMPLETED] in 61ms
+2021-12-20 21:23:18,409 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorReaderJob]] launched with the following parameters: [{run.id=14, arquivoClientes=file:files/clientes.txt, arquivoClientesDelimitado=file:files/clientes_delimitado.txt}]
+2021-12-20 21:23:18,420 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [jdbcCursorReaderStep]
+2021-12-20 21:23:18,460 INFO o.s.b.c.s.AbstractStep [main] Step: [jdbcCursorReaderStep] executed in 39ms
+2021-12-20 21:23:18,473 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorReaderJob]] completed with the following parameters: [{run.id=14, arquivoClientes=file:files/clientes.txt, arquivoClientesDelimitado=file:files/clientes_delimitado.txt}] and the following status: [COMPLETED] in 60ms
+2021-12-20 21:23:18,491 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcPagingReaderJob]] launched with the following parameters: [{run.id=12, arquivoClientes=file:files/clientes.txt, arquivoClientesDelimitado=file:files/clientes_delimitado.txt}]
+2021-12-20 21:23:18,500 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [jdbcPagingReaderStep]
+2021-12-20 21:23:18,529 INFO o.s.b.c.s.AbstractStep [main] Step: [jdbcPagingReaderStep] executed in 29ms
+2021-12-20 21:23:18,534 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcPagingReaderJob]] completed with the following parameters: [{run.id=12, arquivoClientes=file:files/clientes.txt, arquivoClientesDelimitado=file:files/clientes_delimitado.txt}] and the following status: [COMPLETED] in 41ms
+2021-12-20 21:41:33,472 INFO c.d.p.PrimeiroprojetospringbatchApplication [main] Starting PrimeiroprojetospringbatchApplication using Java 13.0.2 on DESKTOP-I038IBG with PID 13560 (C:\Users\Diego\Desktop\cursos\spring-batch\primeiroprojetospringbatch\target\classes started by Diego in C:\Users\Diego\Desktop\cursos\spring-batch\primeiroprojetospringbatch)
+2021-12-20 21:41:33,481 INFO c.d.p.PrimeiroprojetospringbatchApplication [main] No active profile set, falling back to default profiles: default
+2021-12-20 21:41:35,313 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2021-12-20 21:41:35,824 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-12-20 21:41:35,908 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Starting...
+2021-12-20 21:41:36,143 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Start completed.
+2021-12-20 21:41:36,379 INFO o.s.b.c.r.s.JobRepositoryFactoryBean [main] No database type set, using meta data indicating: POSTGRES
+2021-12-20 21:41:36,790 INFO o.s.b.c.l.s.SimpleJobLauncher [main] No TaskExecutor has been set, defaulting to synchronous executor.
+2021-12-20 21:41:37,047 INFO c.d.p.PrimeiroprojetospringbatchApplication [main] Started PrimeiroprojetospringbatchApplication in 4.242 seconds (JVM running for 6.147)
+2021-12-20 21:41:37,354 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=arquivoDelimitadoJob]] launched with the following parameters: [{run.id=15, arquivoClientes=file:files/clientes.txt, arquivoClientesDelimitado=file:files/clientes_delimitado.txt}]
+2021-12-20 21:41:37,423 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [leituraArquivoDelimitadoStep]
+2021-12-20 21:41:37,696 INFO o.s.b.c.s.AbstractStep [main] Step: [leituraArquivoDelimitadoStep] executed in 273ms
+2021-12-20 21:41:37,714 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=arquivoDelimitadoJob]] completed with the following parameters: [{run.id=15, arquivoClientes=file:files/clientes.txt, arquivoClientesDelimitado=file:files/clientes_delimitado.txt}] and the following status: [COMPLETED] in 318ms
+2021-12-20 21:41:37,737 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=arquivoLarguraFixaJob]] launched with the following parameters: [{run.id=15, arquivoClientes=file:files/clientes.txt, arquivoClientesDelimitado=file:files/clientes_delimitado.txt}]
+2021-12-20 21:41:37,755 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [leituraArquivoLarguraFixaStep]
+2021-12-20 21:41:37,800 INFO o.s.b.c.s.AbstractStep [main] Step: [leituraArquivoLarguraFixaStep] executed in 45ms
+2021-12-20 21:41:37,819 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=arquivoLarguraFixaJob]] completed with the following parameters: [{run.id=15, arquivoClientes=file:files/clientes.txt, arquivoClientesDelimitado=file:files/clientes_delimitado.txt}] and the following status: [COMPLETED] in 76ms
+2021-12-20 21:41:37,841 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=imprimeOlajob]] launched with the following parameters: [{nome=Diego123, run.id=32, arquivoClientes=file:files/clientes.txt, arquivoClientesDelimitado=file:files/clientes_delimitado.txt}]
+2021-12-20 21:41:37,855 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [imprimeOlaStep]
+2021-12-20 21:41:37,867 INFO o.s.b.c.s.AbstractStep [main] Step: [imprimeOlaStep] executed in 11ms
+2021-12-20 21:41:37,875 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=imprimeOlajob]] completed with the following parameters: [{nome=Diego123, run.id=32, arquivoClientes=file:files/clientes.txt, arquivoClientesDelimitado=file:files/clientes_delimitado.txt}] and the following status: [COMPLETED] in 30ms
+2021-12-20 21:41:37,895 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=imprimeParImparJob]] launched with the following parameters: [{nome=Diego123, run.id=23, arquivoClientes=file:files/clientes.txt, arquivoClientesDelimitado=file:files/clientes_delimitado.txt}]
+2021-12-20 21:41:37,906 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [imprimeParImparStep]
+2021-12-20 21:41:37,956 INFO o.s.b.c.s.AbstractStep [main] Step: [imprimeParImparStep] executed in 50ms
+2021-12-20 21:41:37,965 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=imprimeParImparJob]] completed with the following parameters: [{nome=Diego123, run.id=23, arquivoClientes=file:files/clientes.txt, arquivoClientesDelimitado=file:files/clientes_delimitado.txt}] and the following status: [COMPLETED] in 66ms
+2021-12-20 21:41:37,985 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorReaderJob]] launched with the following parameters: [{run.id=15, arquivoClientes=file:files/clientes.txt, arquivoClientesDelimitado=file:files/clientes_delimitado.txt}]
+2021-12-20 21:41:37,998 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [jdbcCursorReaderStep]
+2021-12-20 21:41:38,034 INFO o.s.b.c.s.AbstractStep [main] Step: [jdbcCursorReaderStep] executed in 36ms
+2021-12-20 21:41:38,041 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorReaderJob]] completed with the following parameters: [{run.id=15, arquivoClientes=file:files/clientes.txt, arquivoClientesDelimitado=file:files/clientes_delimitado.txt}] and the following status: [COMPLETED] in 53ms
+2021-12-20 21:41:38,065 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcPagingReaderJob]] launched with the following parameters: [{run.id=13, arquivoClientes=file:files/clientes.txt, arquivoClientesDelimitado=file:files/clientes_delimitado.txt}]
+2021-12-20 21:41:38,075 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [jdbcPagingReaderStep]
+2021-12-20 21:41:38,121 INFO o.s.b.c.s.AbstractStep [main] Step: [jdbcPagingReaderStep] executed in 46ms
+2021-12-20 21:41:38,137 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcPagingReaderJob]] completed with the following parameters: [{run.id=13, arquivoClientes=file:files/clientes.txt, arquivoClientesDelimitado=file:files/clientes_delimitado.txt}] and the following status: [COMPLETED] in 69ms
